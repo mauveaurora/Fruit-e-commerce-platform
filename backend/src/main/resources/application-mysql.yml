@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/fruit_shop?useSSL=false&serverTimezone=Asia/Shanghai&characterEncoding=utf8
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+# 使用 MySQL 启动示例：
+# mvn spring-boot:run -Dspring-boot.run.profiles=mysql

@@ -1,0 +1,5 @@
+flowchart LR
+  U[用户浏览器] -->|HTTP/HTTPS| FE[前端 Vue 3 + Vite]
+  FE -->|REST API| BE[后端 Spring Boot]
+  BE --> DB[(H2 / MySQL)]
+  BE --> CACHE[JWT 鉴权]

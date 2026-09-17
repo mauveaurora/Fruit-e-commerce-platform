@@ -1,0 +1,20 @@
+.tools/
+.tmp-images/
+
+# Build output and dependencies
+backend/target/
+frontend/node_modules/
+frontend/dist/
+
+# Local IDE and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local environment and secrets
+*.env
+!.env.example
+application-local.yml
+application-local.yaml

@@ -1,0 +1,49 @@
+erDiagram
+  USER ||--o{ ORDER_MAIN : places
+  USER ||--o{ USER_ADDRESS : has
+  USER ||--o{ FAVORITE_ITEM : likes
+  PRODUCT ||--o{ ORDER_ITEM : included
+  PRODUCT ||--o{ CART_ITEM : in
+  ORDER_MAIN ||--o{ ORDER_ITEM : contains
+  USER {
+    bigint id
+    string username
+    string password
+    string phone
+  }
+  PRODUCT {
+    bigint id
+    string name
+    string category
+    decimal price
+    int stock
+  }
+  CART_ITEM {
+    bigint id
+    bigint user_id
+    bigint product_id
+    int quantity
+  }
+  ORDER_MAIN {
+    bigint id
+    bigint user_id
+    decimal total_amount
+    string status
+  }
+  ORDER_ITEM {
+    bigint id
+    bigint order_id
+    bigint product_id
+    int quantity
+    decimal price
+  }
+  USER_ADDRESS {
+    bigint id
+    bigint user_id
+    string detail
+  }
+  FAVORITE_ITEM {
+    bigint id
+    bigint user_id
+    bigint product_id
+  }
