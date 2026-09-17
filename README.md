@@ -62,9 +62,6 @@
 mvn spring-boot:run
 ```
 
-如果你本机尚未安装 Maven：
-1. 安装 Maven 后执行上述命令
-2. 或使用 IntelliJ IDEA / VS Code Java 插件直接运行 FruitEcomApplication
 
 ### 5.2 启动前端
 在 frontend 目录执行：
@@ -77,7 +74,7 @@ npm run dev
 浏览器访问：
 http://localhost:5173
 
-## 6. 切换 MySQL（可选）
+## 6. 切换 MySQL
 1. 创建数据库: fruit_shop
 2. 修改 backend/src/main/resources/application-mysql.yml 中账号密码
 3. 使用 profile 启动：
@@ -94,9 +91,3 @@ mvn spring-boot:run -Dspring-boot.run.profiles=mysql
 5. 前端 Axios 拦截器与 401 处理
 6. 路由鉴权守卫
 
-## 8. 说明
-当前环境中未检测到 mvn 命令，已完成代码编写与编辑器错误检查。
-如需，我可以继续为你生成：
-1. 数据库建表 SQL 导出脚本
-2. Postman 接口测试集合
-3. 答辩用系统演示脚本（按页面操作顺序）
