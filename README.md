@@ -77,11 +77,5 @@ http://localhost:5173
 mvn spring-boot:run -Dspring-boot.run.profiles=mysql
 ```
 
-## 7. 已完成的工程化要点
-1. 统一响应结构 ApiResponse
-2. 全局异常处理 GlobalExceptionHandler
-3. JWT 鉴权拦截器
-4. CORS 跨域配置
-5. 前端 Axios 拦截器与 401 处理
-6. 路由鉴权守卫
+
 
